@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22c5cbd6-5019-423b-bfa9-dc7c1dbde4d7" name="Default" comment="" />
+    <list default="true" id="22c5cbd6-5019-423b-bfa9-dc7c1dbde4d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementations/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementations/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementations/META-INF/Implementations.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementations/META-INF/Implementations.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementations/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementations/TreeKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.kt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tree.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tree.kt">
+      <file leaf-file-name="BinaryTree.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -30,10 +37,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Tree.kt" />
+        <option value="$PROJECT_DIR$/src/BinaryTree.kt" />
       </list>
     </option>
   </component>
@@ -47,11 +58,12 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="135" />
+    <option name="x" value="30" />
     <option name="y" value="23" />
-    <option name="width" value="1305" />
+    <option name="width" value="1440" />
     <option name="height" value="807" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -79,6 +91,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
@@ -97,7 +110,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.BinaryTreeKt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -116,6 +129,16 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="BinaryTreeKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Implementations" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="BinaryTreeKt" />
+      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration name="TreeKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Implementations" />
@@ -149,8 +172,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Kotlin.TreeKt" />
+      <item itemvalue="Kotlin.BinaryTreeKt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BinaryTreeKt" />
         <item itemvalue="Kotlin.TreeKt" />
       </list>
     </recent_temporary>
@@ -166,32 +194,40 @@
       <option name="presentableId" value="Default" />
       <updated>1526031876961</updated>
       <workItem from="1526031882825" duration="165000" />
-      <workItem from="1526032094525" duration="3151000" />
+      <workItem from="1526032094525" duration="11836000" />
     </task>
+    <task id="LOCAL-00001" summary="Added star projection">
+      <created>1526036149206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526036149206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3316000" />
+    <option name="totallyTimeSpent" value="12001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="720" y="23" width="720" height="807" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32957748" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32957748" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32957748" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32957748" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25663716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12446352" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -214,6 +250,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added star projection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added star projection" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -229,8 +269,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
