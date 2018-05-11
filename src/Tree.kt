@@ -1,13 +1,13 @@
-data class Node<out T, Node>(private val value: T) {
+data class Node<out T>(private val value: T) {
     val info: T? = value
-    var left: Node? = null
-    var right: Node? = null
+    var left: Node<*>? = null
+    var right: Node<*>? = null
 }
 
-class BinaryTree(var root: Node = null) {
+class BinaryTree(var root: Node<*>? = null) {
 
-    fun preorderTraverse(node: Node?) {
-        if (node.info == null) {
+    fun preorderTraverse(node: Node<*>?) {
+        if (node?.info == null) {
             return
         }
         println(node.info)
@@ -15,8 +15,8 @@ class BinaryTree(var root: Node = null) {
         preorderTraverse(node.right)
     }
 
-    fun inorderTraverse(node: Node?) {
-        if (node.info == null) {
+    fun inorderTraverse(node: Node<*>?) {
+        if (node?.info == null) {
             return
         }
         inorderTraverse(node.left)
@@ -24,8 +24,8 @@ class BinaryTree(var root: Node = null) {
         inorderTraverse(node.right)
     }
 
-    fun postorderTraverse(node: Node?) {
-        if (node.info == null) {
+    fun postorderTraverse(node: Node<*>?) {
+        if (node?.info == null) {
             return
         }
         postorderTraverse(node.left)
