@@ -75,12 +75,11 @@ class BinaryTree<T : Comparable<T>>(var info: T? = null) {
     fun delete(value: T) {
         var pointerA: BinaryTree<*>? = this
         var pointerB: BinaryTree<*>? = null
-        var pointerC: BinaryTree<*>?
-        var pointerD: BinaryTree<*>? = null
         while (pointerA?.info != null && pointerA.info != value) {
             pointerB = pointerA
             pointerA = if (value < (pointerA.info as T)) pointerA.left else pointerA.right
         }
+        var pointerC: BinaryTree<*>?
         when {
             pointerA?.left == null -> pointerC = pointerA?.right
             pointerA.right == null -> pointerC = pointerA.left
@@ -89,6 +88,7 @@ class BinaryTree<T : Comparable<T>>(var info: T? = null) {
                 if (pointerC?.left == null) {
                     pointerC?.left = pointerA.left
                 } else {
+                    var pointerD: BinaryTree<*>? = null
                     while (pointerC?.left != null) {
                         pointerD = pointerC
                         pointerC = pointerC?.left
@@ -110,9 +110,14 @@ class BinaryTree<T : Comparable<T>>(var info: T? = null) {
 
 fun main(args: Array<String>) {
     val tree: BinaryTree<String> = BinaryTree()
+    val treeTwo: BinaryTree<Int> = BinaryTree()
     val names = arrayOf("Zebedee", "Phil", "Phillip", "Jones", "Kylie", "Marshall", "Anna", "Bella", "Richard", "Toby",
             "Mark", "Jennifer", "Trevor", "Kyle")
+    val numbers = arrayOf(1, 34, 34 , 11, 23, 44, 55, 1, 20, 34, 89)
+    treeTwo.constructTree(numbers)
     tree.constructTree(names)
+
+    treeTwo.inorderTraverse()
 
     println("\nPrinting in inorder!\n")
     tree.inorderTraverse()
