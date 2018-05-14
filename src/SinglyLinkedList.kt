@@ -4,7 +4,7 @@ data class Node<T>(var value: T) {
     var next: Node<T>? = null
 }
 
-class SinglyLinkedList<T> {
+private class SinglyLinkedList<T> {
     var head: Node<T>? = null
 
     fun leftInsert(info: T) {
@@ -26,16 +26,16 @@ class SinglyLinkedList<T> {
         }
     }
 
-    fun leftDelete(): Node<T>? {
+    fun leftDelete(): T? {
         if (head == null) {
             throw BufferUnderflowException()
         }
         val temp = head
         head = head?.next
-        return temp
+        return temp?.value
     }
 
-    fun rightDelete(): Node<T>? {
+    fun rightDelete(): T? {
         if (head == null) {
             throw BufferUnderflowException()
         } else {
@@ -46,7 +46,7 @@ class SinglyLinkedList<T> {
                 pointerA = pointerA.next
             }
             pointerB?.next = null
-            return pointerA
+            return pointerA?.value
         }
     }
 
@@ -67,7 +67,7 @@ fun main(args: Array<String>) {
     }
     linkedList.sequentialPrint()
     val deletedNode = linkedList.rightDelete()
-    println("\nThe deleted node is ${deletedNode?.value}")
+    println("\nThe deleted node is $deletedNode")
 }
 
 

@@ -1,6 +1,6 @@
 import java.util.*
 
-class BinaryTree<T : Comparable<T>>(var info: T? = null) {
+private class BinaryTree<T : Comparable<T>>(var info: T? = null) {
     private var left: BinaryTree<*>? = null
     private var right: BinaryTree<*>? = null
 
